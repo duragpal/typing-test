@@ -1,0 +1,46 @@
+.TextSelector {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #4caf50; /* Green border */
+  border-radius: 8px;
+  background-color: #f0f0f0; /* Light gray background */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.TextSelector h2 {
+  font-size: 1.5rem; /* Larger font size */
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Dark text color */
+}
+
+.TextSelector select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem; /* Slightly larger font size */
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 5px;
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color */
+  outline: none; /* Remove outline on focus */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.TextSelector select:focus {
+  border-color: #66bb6a; /* Light green on focus */
+}
+
+.TextSelector select option:first-child {
+  color: #999; /* Lighter text color for placeholder */
+}
+
+.TextSelector select option {
+  font-size: 1rem;
+  background-color: #f5f5f5; /* Light gray background for options */
+}
+
+.TextSelector select option:hover {
+  background-color: #e0e0e0; /* Darker gray on hover */
+  color: #333; /* Dark text color on hover */
+}

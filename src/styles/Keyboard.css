@@ -1,0 +1,122 @@
+.Keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: auto; /* Adjust width to fit content */
+  max-width: 100%; /* Allow it to take up full width if necessary */
+  max-width: 600px; /* Limit maximum width */
+}
+
+.Keyboard-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.Keyboard-key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; /* Adjust width for smaller keys */
+  height: 32px; /* Adjust height for smaller keys */
+  margin: 2px;
+  padding: 4px; /* Adjust padding for smaller keys */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 10px; /* Adjust font size for smaller keys */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Keyboard-key.highlighted {
+  background-color: #ffcc00; /* Change highlight color */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Keyboard-key:active {
+  background-color: #ddd;
+}
+
+/* Special styles for larger keys */
+.Keyboard-key.Backspace {
+  width: 60px; /* Adjust width for larger Backspace key */
+}
+
+.Keyboard-key.Tab {
+  width: 44px; /* Adjust width for Tab key */
+}
+
+.Keyboard-key.CapsLock {
+  width: 60px; /* Adjust width for CapsLock key */
+}
+
+.Keyboard-key.Enter {
+  width: 60px; /* Adjust width for Enter key */
+}
+
+.Keyboard-key.Shift {
+  width: 76px; /* Adjust width for Shift key */
+}
+
+.Keyboard-key.Space {
+  width: 180px; /* Adjust width for Space key */
+}
+
+.Keyboard-key.Meta,
+.Keyboard-key.Ctrl,
+.Keyboard-key.Alt,
+.Keyboard-key.Menu {
+  width: 44px; /* Adjust width for Meta, Ctrl, Alt, Menu keys */
+}
+
+/* Ensure text inside keys does not overflow */
+.Keyboard-key span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .Keyboard-key {
+    width: 28px; /* Further reduce width for smaller screens */
+    height: 28px; /* Further reduce height for smaller screens */
+    font-size: 9px; /* Adjust font size for smaller screens */
+    padding: 2px; /* Adjust padding for smaller screens */
+  }
+
+  .Keyboard-key.Backspace {
+    width: 56px; /* Adjust width for larger Backspace key on smaller screens */
+  }
+
+  .Keyboard-key.Tab {
+    width: 40px; /* Adjust width for Tab key on smaller screens */
+  }
+
+  .Keyboard-key.CapsLock {
+    width: 56px; /* Adjust width for CapsLock key on smaller screens */
+  }
+
+  .Keyboard-key.Enter {
+    width: 56px; /* Adjust width for Enter key on smaller screens */
+  }
+
+  .Keyboard-key.Shift {
+    width: 72px; /* Adjust width for Shift key on smaller screens */
+  }
+
+  .Keyboard-key.Space {
+    width: 160px; /* Adjust width for Space key on smaller screens */
+  }
+
+  .Keyboard-key.Meta,
+  .Keyboard-key.Ctrl,
+  .Keyboard-key.Alt,
+  .Keyboard-key.Menu {
+    width: 40px; /* Adjust width for Meta, Ctrl, Alt, Menu keys on smaller screens */
+  }
+}

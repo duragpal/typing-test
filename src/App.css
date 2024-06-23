@@ -1,0 +1,42 @@
+/* App.css */
+
+/* Set a colorful background */
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0dfdf; /* Light gray background */
+}
+
+.TextDisplay span.correct {
+  color: green;
+}
+
+.TextDisplay span.incorrect {
+  color: red;
+}
+
+.Keyboard span.highlighted {
+  background-color: yellow;
+}
+
+.TextDisplay {
+  margin-bottom: 20px;
+}
+
+.Timer {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #45a049;
+}
